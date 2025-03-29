@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: stock-advisor
+    env: python
+    buildCommand: ./build.sh
+    startCommand: streamlit run app.py --server.port $PORT --server.address 0.0.0.0
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: true
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_KEY
+        sync: false
+    autoDeploy: true  # Automatically deploy when you push to GitHub
