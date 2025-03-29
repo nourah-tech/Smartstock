@@ -1,0 +1,16 @@
+bcrypt
+firebase-admin
+numpy
+pandas
+plotly
+pyrebase4
+python-dotenv
+requests
+scikit-learn
+sqlalchemy
+streamlit
+streamlit-authenticator
+supabase
+yfinance
+
+"Add requirements.txt for Render deployment"
